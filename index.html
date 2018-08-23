@@ -7,13 +7,16 @@
 
 <body>
   <script>
-    var company = prompt('Каково «официальное» название JavaScript?', '');
+    var login = prompt('Введите логин', '');
     
-    if (company == 'ECMAScript') {
+    if (login == 'Админ') {
     alert('Верно!');
+    } else if (login != 'Админ'){
+    alert('Я вас не знаю');
     } else {
-    alert('Не знаете? «ECMAScript»!');
+    alert('Вход отменён');
     }
+    
   </script>
   <p>текст</p>
 </body>
