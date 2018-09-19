@@ -4,29 +4,8 @@
     <meta charset="utf-8" />
 </head>
 <body>
-<form name="search">
-    <input type="text" name="key" placeholder="Введите ключ"></input>
-    <input type="button" name="print" value="Печать" />
-</form>
-<div id="printBlock"></div>
 <script>
-function printForm(e){
-     
-    // получаем значение поля key
-    var keyBox = document.search.key;
-    var val = keyBox.value;
-    // получаем элемент printBlock
-    var printBlock = document.getElementById("printBlock");
-    // создаем новый параграф
-    var pElement = document.createElement("p");
-    // устанавливаем у него текст
-    pElement.textContent = val;
-    // добавляем параграф в printBlock
-    printBlock.appendChild(pElement);
-}
- 
-var printButton = document.search.print;
-printButton.addEventListener("click", printForm);
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdMS-5UwCGoBP3g1_Sx8YGFF7Y6F26YREjCxG1N2pxvOIugHw/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Загрузка...</iframe>
 </script>
 </body>
 </html>
